@@ -256,3 +256,20 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.font-style{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+}
+.jsWorkQuesrion{
+  max-width: 500px;
+  margin:0 auto;
+  padding:0 10px;
+}
+.text-center{
+  text-align: center;
+ 
+}
+.text-effect{
+  text-shadow: 2px 2px 5px red;
+}
