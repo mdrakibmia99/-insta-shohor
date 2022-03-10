@@ -144,6 +144,9 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
   const likedPosts = getLikedPosts();
+// liked textContent clear for remove duplicate value
+  document.getElementById("liked").textContent = "";
+
   likedPosts.forEach((post) => {
     const div = createPost(post);
     document.getElementById("liked").appendChild(div);
@@ -152,7 +155,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
   const reportedPosts = getReportedPosts();
-  // reported text clear for remove duplicate value
+  // reported text content clear for remove duplicate value
   document.getElementById("reported").textContent = "";
 
   reportedPosts.forEach((post) => {
