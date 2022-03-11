@@ -19,6 +19,7 @@ const addToLiked = (id) => {
   likedPostsId.push(id);
   // which post reported that remove 
   const remainPosts=posts.filter(post => !reportedPostsId.includes(post.id));
+  
   showPosts(remainPosts);
 };
 
